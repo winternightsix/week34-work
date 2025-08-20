@@ -1,0 +1,16 @@
+/* 麵包屑 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 8px;
+  }
+}

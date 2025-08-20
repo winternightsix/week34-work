@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-900);
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--neutral-900);
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  &:hover {
+    color: var(--primary-400);
+  }
+}
+
+.text-center {
+  text-align: center;
+}

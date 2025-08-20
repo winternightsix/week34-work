@@ -1,0 +1,48 @@
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.active {
+  color: var(--primary-400);
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--neutral-900);
+}
+
+.page-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-list li:hover {
+  background-color: var(--neutral-100);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    padding: 8px 15px;
+    border-radius: 0;
+  }
+  .active {
+    background-color: var(--primary-300);
+  }
+  .bi {
+    font-size: 16px;
+  }
+}
