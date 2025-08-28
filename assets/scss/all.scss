@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
-@import "./base/reset";
-@import "./base/base";
+/* 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-@import "./helper/utils";
-@import "./helper/variables";
 
-@import "./components/breadcrumb";
-@import "./components/button";
+@import './helper/variable';
+@import './helper/utility';
+@import './base/reset';
+@import './base/base';
 
-@import "./layout/header";
-@import "./layout/footer";
+@import './components/breadcrumb';
+@import './components/btn';
 
-@import "./pages/index";
-@import "./pages/products";
-@import "./pages/product";
-@import "./pages/story";
+@import './layout/header';
+@import './layout/footer';
+
+
+@import './pages/index';
+@import './pages/product_list';
+@import './pages/story';
+@import './pages/product';

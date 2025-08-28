@@ -1,103 +1,128 @@
-.product-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -4px;
-  margin-right: -4px;
+/* 產品圖片 */
+
+.prodcut-colx7{
+	padding-left: 12px;
+	padding-right: 12px;
+
+	width: calc(100%/12*7);
+	
 }
 
-.product-col {
-  padding-left: 4px;
-  padding-right: 4px;
-  width: calc(100% / 12 * 6);
-}
-
-@media (max-width: 767px) {
-  .product-row {
+.product-row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-
-  .product-col {
-    width: calc(100%);
-  }
+    margin-left: -4px;
+    margin-right: -4px;
+   
 }
 
-.product-price {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--neutral-500);
-  padding-left: 8px;
+
+.prodcut-col{
+    width: calc(100% / 12 * 6);
+    
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
-.product-color {
-  width: 64px;
-  text-align: center;
-  color: var(--neutral-600);
-  cursor: pointer;
+.info-colx5{
+	padding-left: 12px;
+	padding-right: 12px;
+	
+	width: calc(100%/12*5);
+	
 }
 
-.size-btn {
-  border: 1px solid var(--neutral-300);
-  width: 160px;
-  padding: 12px 24px;
+
+.deleted-price{
+    font-size: 14px;
+    font-weight: 400;
+    color: $neutral-500;
 }
 
-.size-act,
-.size-hov:hover {
-  border-color: var(--neutral-900);
+.product-color{
+    width: 64px;
+    text-align: center;
+    color: $neutral-600;
 }
 
-.btn-like {
-  display: flex;
-  gap: 8px;
-  .btn {
+
+.btn-color{
+	padding: 0;
+}
+
+
+.btn-size{
+    border: 1px solid $neutral-300;
+    width: 160px;
+
+}
+
+.active, .btn-size:hover{
+    border-color: $neutral-900;
+}
+
+
+.product-action{
+    display: flex;
+    gap: 8px;
+}
+
+@media(max-width:767px){
+  .product-action{
+	flex-direction: row-reverse;
+}
+}
+
+.product-action .btn{
     width: 50%;
+}
+
+@media(max-width:767px){
+    .product-action .btn{
+        width: 100%;
+    } 
+    .product-action .btn-onlylogo-md{
+        max-width: 48px;
+    } 
+}
+
+
+.product-action .bi{
+    margin-right: 8px;
+}
+
+.prod-info-title{
+    font-weight: 500;
+}
+
+.prod-info-item p{
+    color: $neutral-600;
+}
+
+.prod-info-item{
+    border-bottom: 1px solid $neutral-300;
+}
+
+@media(max-width:767px){
+  .prodcut-col,
+  .prodcut-colx7,
+  .info-colx5{
+    width: unset;
   }
-  .bi {
-    font-size: 20px;
+}
+
+
+@media(max-width:767px){
+  .product-row-md{
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .product-col-md{
+    min-width: 316px;
+    // 卡片寬度300+間距16
     padding-right: 8px;
-  }
-}
+    padding-left: 8px;
 
-@media (max-width: 576px) {
-  .btn-like {
-    .btn {
-      width: auto;
-    }
-    .btn-booking {
-      flex: 8 1 auto;
-    }
-  }
-}
-
-.info-title {
-  font-weight: 500;
-  color: var(--neutral-900);
-}
-
-.product-info {
-  border-bottom: 1px solid var(--neutral-300);
-  p {
-    color: var(--neutral-600);
-  }
-}
-
-.best-select-card a:hover {
-  opacity: 0.8;
-}
-
-@media (max-width: 767px) {
-  .best-select .row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-
-  .col-3 {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 85%;
   }
 }

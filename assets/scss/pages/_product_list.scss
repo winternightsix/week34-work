@@ -1,0 +1,18 @@
+
+.category .active{
+    color: $primary-400;
+}
+
+.page .btn{
+    padding: 8px 15px;
+    font-weight: 400;
+}
+
+.page .active{
+    background-color: $primary-300;
+    font-weight: 500;
+}
+
+.page:hover{
+    background-color: $neutral-100;
+}
